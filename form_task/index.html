@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>film-anketa</title>
+</head>
+<body>
+    <header class="header">
+        <div class="overlay"><h1 class="header-title">Movie Data</h1></div>
+    </header>
+    <main class="main">
+        <section class="content">
+            <div class="ques first">
+                <form action="#1" id="passward">
+                    <label for="login">Input username</label>
+                    <input type="text" name="login" id="login" required pattern="\w\w*">
+                    <label for="passwd">Input passward</label>
+                    <input type="password" name="passwd" id="passwd" required minlength="8" pattern="\w\d*\[a-z]+[A-Z]+">
+                    <input type="submit" id="ok" value="OK">
+                </form>
+            </div>
+            <div class="ques" id="1">
+                <form action="#2" class="form">
+                    <label for="fav">Your favorite film</label>
+                    <input type="text" name="fav">
+                </form>
+            </div>
+            <div class="ques" id="2">
+                <form action="#1" class="form">
+                    <h3>Choose like you genres</h3>
+                    <label for="genre">Shoter</label>
+                    <input type="checkbox" name="genre" required>
+                    <label for="genre">Dramma</label>
+                    <input type="checkbox" name="genre" required>
+                    <label for="genre">Document</label>
+                    <input type="checkbox" name="genre" required>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
